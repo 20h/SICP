@@ -1,0 +1,7 @@
+interpreter�� � combination�� evaluate �� ��
+combination�� ���� expression���� ���� evaluate�ϰ�
+�� ���� ������ leftmost expression�� value�� operator�� ���ϰ�
+������ expression�� operator�� operands�� ���ϴ� ������ �����Ѵ�.
+�� �ڵ��� ���� operator �ڸ��� �ִ� if expression�� ���� b�� ���� ��ȣ�� ���� operator�� - �Ǵ� +�� ���õȴ�.
+���������� a + abs(b) �� �����ϴ� procedure�� ���ǵȴ�.
+
