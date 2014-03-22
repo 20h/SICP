@@ -7,9 +7,8 @@
 (define (multi a b)
   (multi-iter a b 0))
 
-(define (multi-iter a b c) ; (a*b)+c 를 step transition 간 동일한 값으로 유지. b가 1이 되었을때 a+c를 취한다.
-  (cond ((or (= a 0) (= b 0)) 0)
-        ((= b 1) (+ a c))
+(define (multi-iter a b c) ; (a*b)+c 를 step transition 간 동일한 값으로 유지. b가 0이 되었을때 c를 취한다.
+  (cond ((= b 0) c)
         ((even? b) (multi-iter (double a) (halve b) c       ))
         (else      (multi-iter  a         (- b 1)   (+ c a) ))
   ))
