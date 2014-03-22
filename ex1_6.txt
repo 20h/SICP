@@ -1,3 +1,0 @@
-(good-enough? guess x)의 결과에 상관 없이
-then, else 의 expression이 evaluate되므로
-sqrt-iter procedure가 무한으로 재귀 호출될 것이다.
