@@ -11,7 +11,7 @@
 
 (define (fast-expt-iter b n a)
   (cond ((< n 1)   a)
-        ((even? n) (fast-expt-iter b (/ n 2) (* a (expt b (/ n 2)))))
+        ((even? n) (fast-expt-iter (* b b) (/ n 2) a))
         (else      (fast-expt-iter b (- n 1) (* a b)))
   )
 )
@@ -26,5 +26,5 @@
         (else (* b (fast-expt-recu b (- n 1))))))
 
 
-(expt 2 1000000)
+(expt 2 10)
 ;(fast-expt-recu 2 100000)
