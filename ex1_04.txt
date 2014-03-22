@@ -1,7 +1,6 @@
-interpreter�� � combination�� evaluate �� ��
-combination�� ���� expression���� ���� evaluate�ϰ�
-�� ���� ������ leftmost expression�� value�� operator�� ���ϰ�
-������ expression�� operator�� operands�� ���ϴ� ������ �����Ѵ�.
-�� �ڵ��� ���� operator �ڸ��� �ִ� if expression�� ���� b�� ���� ��ȣ�� ���� operator�� - �Ǵ� +�� ���õȴ�.
-���������� a + abs(b) �� �����ϴ� procedure�� ���ǵȴ�.
-
+interpreter가 어떤 combination을 evaluate 할 때
+combination의 모든 expression들을 먼저 evaluate하고
+그 결과 생기는 leftmost expression의 value를 operator로 취하고
+나머지 expression을 operator의 operands로 취하는 식으로 동작한다.
+이 코드의 경우 operator 자리에 있는 if expression에 의해 b의 값의 부호에 따라 operator가 - 또는 +로 선택된다.
+결과적으로 a + abs(b) 를 계산하는 procedure가 정의된다.
