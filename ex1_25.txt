@@ -1,0 +1,6 @@
+교과서에 제시된 expmod 대신
+fast-expt 를 이용한 expmod를 사용하면
+답은 구할 수 있겠으나,, 속도가 너무 느리다. fast prime tester를 만드는데엔 부적합하다.
+교과서에 제시된 expmod는 매우 큰 base, exp 값에 대한 나머지도 빠르게 구해낸다.
+
+
