@@ -30,7 +30,7 @@
   (* (/ h 3)
      (sum simpsonTerm 0 inc n))) ; from 0 to n, accumulate simpson terms
 
-(integral2 cube 0 5 100)
+(integral2 cube 0 1 100)
 
-(integral2 cube 0 5 1000)
+(integral2 cube 0 1 1000)
   
